@@ -1,6 +1,9 @@
 class AuthorSessionsController < ApplicationController
   def new
+      @tag = Tag.all
+      @articles = Article.all
   end
+
 
   def create
     if login(params[:email], params[:password])

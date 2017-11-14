@@ -6,6 +6,7 @@ before_action :require_login, except: [:index, :show]
 
   def index
     @articles = Article.all
+    @tag = Tag.all
   end
 
   def show

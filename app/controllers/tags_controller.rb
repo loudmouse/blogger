@@ -4,6 +4,7 @@ class TagsController < ApplicationController
 
   def index
     @tag = Tag.all
+    @articles = Article.all
   end
 
   def show

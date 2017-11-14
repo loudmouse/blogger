@@ -17,6 +17,8 @@ class AuthorsController < ApplicationController
   # GET /authors.json
   def index
     @authors = Author.all
+    @tag = Tag.all
+    @articles = Article.all
   end
 
   # GET /authors/1
