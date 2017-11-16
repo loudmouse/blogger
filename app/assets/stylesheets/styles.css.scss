@@ -24,7 +24,7 @@ a {
 #container {
   overflow: hidden;
   position: relative;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   background: #fff;
   padding: 20px 40px;
@@ -32,16 +32,7 @@ a {
   margin-top: 20px;
 }
 
-#sidebar {
-  float: right;
-  height: 100%
-}
-
 #content {
   float: left;
   padding-top: 20px;
-}
-
-#sidebar ul li a{
-color: blue;
 }
