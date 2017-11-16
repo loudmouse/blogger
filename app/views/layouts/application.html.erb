@@ -25,37 +25,7 @@
          <% end %>
        </h6>
      </div>
-     <div id="sidebar">
-       <%= Time.now.strftime("%m/%d/%Y") %>
-      <hr>
-       <h6>
-         <% if logged_in? %>
-           <%= link_to tag.name, tag_path(tag) %>
-           <%= "Logged in as #{current_user.email}" %>
-           <%= link_to "(logout)", logout_path %>
-         <% else %>
-           <%= link_to "(login)", login_path %>
-         <% end %>
-       </h6>
-       <hr>
-       <h6>Tags</h6>
-       <ul id="tags">
-          <% @tag.each do |tag| %>
-          <li>
-           <%= link_to tag.name, tag_path(tag) %>
-          </li>
-         <% end %>
-       </ul>
-       <hr>
-       <h6>Articles</h6>
-       <ul id="articles">
-         <% @articles.each do |article| %>
-           <li>
-             <%= link_to article.title, article_path(article) %>
-           </li>
-         <% end %>
-       </ul>
-     </div>
+    
    </div>
   </body>
 </html>
